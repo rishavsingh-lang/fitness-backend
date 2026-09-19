@@ -1,5 +1,13 @@
 from datetime import datetime , timedelta
 
+# 💡 The Psycopg 3 phone compatibility layer
+import sys
+import psycopg
+import psycopg.rows
+
+# Trick older dependencies into using the modern engine via an alias injection
+sys.modules['psycopg2'] = psycopg
+sys.modules['psycopg2.extras'] = psycopg.rows
 
 # ============================================================
 # FITNESS APP
