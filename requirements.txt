@@ -1,6 +1,8 @@
 fastapi
 uvicorn[standard]
-psycopg[binary,pool]
+psycopg==3.2.4
+psycopg-binary==3.2.4
+psycopg-pool==3.2.4
 email-validator
 google-auth
 requests
